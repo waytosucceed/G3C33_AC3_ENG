@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Class Activity 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/x-icon" href="Logo_last.png">
+
+  <style>
+    .activity {
+      width: 100%;
+      height: auto;
+      background-color: rgb(156, 225, 247);
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+      border-radius: 2px;
+    }
+
+    .activity p {
+      font-size: 50px;
+    }
+
+    #img-area {
+      width: 40%;
+    }
+
+    #content-area {
+      width: 60%;
+    }
+
+    #heading {
+      font-family: Harrington;
+      font-size: 40px;
+      font-weight: bolder;
+      color: maroon;
+    }
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      padding: 12px;
+      font-size: 29px;
+    }
+    .modal{
+      width: 100%;
+    }
+
+    .modal-body {
+      font-size: 1.5rem;
+    }
+    .modal-dialog {
+        max-width: 900px; /* Adjust the width as needed */
+    }
+  </style>
+</head>
+
+<body>
+  <audio id="cheers">
+    <source src="cheers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="points" src="Points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+  <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+    <img src="Logo.png" width="5%" style="float:left; margin-top:25px; padding-left: 10px;" class="img-responsive">
+    <span> <img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+  </div>
+  <br>
+<!-- 
+  <div style="display: flex; gap: 10px; justify-content: center;">
+    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#simplePresentModal">Simple Present
+      Tense</button>
+    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#presentContinuousModal">Present Continuous
+      Tense</button>
+  </div> -->
+  
+  <center>
+    <h1 id="heading">Present Perfect Tense</h1> 
+  </center>
+  <div class="container">
+    <div class="row">
+      <!-- Articles Content -->
+      <div class="col-md-12" style="font-size: 24px">
+        <p>
+          It is used to describe actions or situations that started in the past and are still relevant or continue to
+          the present.
+        </p>
+        <b>Rule:</b> Subject + have/has + past participle (ed) + the rest of the sentence.
+        <p></p>
+        <div style="display: flex; gap: 20%;">
+        <div style="background: #C8A1E0; padding: 1rem;border-radius: 1rem;">
+          👉 We use "has" for: <b> He, She, It </b><br>
+          <b>Example:</b> She has visited her grandmother.<br>
+          <p></p>
+        </div>
+        <div style="background-color: #96C9F4; padding: 1rem; border-radius: 1rem;"> 
+          👉 We use "have" for:<b> I, You, We, They, </b><br>
+          <b>Example:</b> They have visited the zoo.<br>
+          <p></p>
+        </div>
+      </div>
+      <p></p>
+        Let us explore some irregular verbs and how they change in the Present Perfect tense:<br>
+        <div style="display: flex; gap: 20%;">
+          <div>
+            <li> Go → has/have gone</li>
+            <li> Eat → has/have eaten</li>
+            <li> See → has/have seen</li>
+            <li> Take → has/have taken</li>
+            <li> Write → has/have written</li>
+          </div>
+          <div>
+            <li> Speak → has/have spoken</li>
+            <li> Give → has/have given</li>
+            <li> Make → has/have made</li>
+            <li> Break → has/have broken</li>
+            <li> Ride → has/have ridden </li>
+          </div>
+        </div>
+      </div>
+    </div>
+<p></p>
+<p></p>
+    <div class="container text-center">
+      <a href="index2.html" class="btn btn-primary mb-5 btn-lg text-center"
+        style="height: 50px; width: 200px; font-size: 22px;">Keynote</a>
+    </div>
+  </div>
+
+  <!-- Simple Present Tense Modal -->
+  <div class="modal fade" id="simplePresentModal" tabindex="-1" aria-labelledby="simplePresentModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="simplePresentModalLabel">Simple Present Tense</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          The simple present tense is used to describe habits, general truths, and regular actions. The simple present
+          tense is like talking about your daily routine.
+          <br><br>
+          <b>Rule:</b> Subject + Verb in the base form/third person plural form + the rest of the sentence
+          <br><br>
+          For He/She/It (add 's' or 'es' to the verb):
+          <br> He runs fast.
+          <br><br>
+          For I/You/We/They (use the base form of the verb):
+          <br> I like to read.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Present Continuous Tense Modal -->
+  <div class="modal fade" id="presentContinuousModal" tabindex="-1" aria-labelledby="presentContinuousModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="presentContinuousModalLabel">Present Continuous Tense</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          We use this tense to talk about actions happening right now or around this time.
+          <br><br>
+          <b>Rule:</b> Subject + am/is/are + present participle (verb+ing) + the rest of the sentence
+          <br><br>
+          We use:
+          <ul>
+            <li>"is" for he/she/it</li>
+            <li>"am" for I</li>
+            <li>"are" for you/we/they</li>
+          </ul>
+          Using "is" for he/she/it:
+          <br> He is running fast.
+          <br><br>
+          Using "am" for I:
+          <br> I am reading a book.
+          <br><br>
+          Using "are" for you/we/they:
+          <br> You are playing with the ball.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
